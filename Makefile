@@ -15,7 +15,7 @@ build:
 
 .PHONY: test
 test: build
-	cd ./build && ctest
+	cd ./build && ctest $(ARGS)
 
 .PHONY: clean
 clean:
