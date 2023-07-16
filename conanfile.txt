@@ -1,6 +1,7 @@
 [requires]
 zlib/1.2.13
 gtest/1.13.0
+glog/0.6.0
 boost/1.82.0
 
 [generators]
