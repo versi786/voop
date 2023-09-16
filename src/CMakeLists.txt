@@ -7,6 +7,7 @@ enable_testing()
 find_package(ZLIB REQUIRED)
 find_package(GTest REQUIRED)
 find_package(glog REQUIRED)
+find_package(fmt REQUIRED)
 
 add_subdirectory(voop)
 

@@ -13,7 +13,7 @@ class DNSPacket {
         /*
             https://datatracker.ietf.org/doc/html/rfc1035#autoid-41
                                             1  1  1  1  1  1
-            0  1  2  3  4  5  6  7  8  9  0  1  2  3  4  5
+              0  1  2  3  4  5  6  7  8  9  0  1  2  3  4  5
             +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
             |                      ID                       |
             +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
@@ -54,7 +54,8 @@ class DNS {
     /*
     raises runtime_error in case of network failure
     */
-    static std::string query(std::string name);
+  public:
+    static std::string query(const std::string& name);
 };
 } // namespace net
 } // namespace voop

@@ -1,7 +1,7 @@
 add_library(voop_net STATIC dns.cpp)
 
 target_include_directories(voop_net PUBLIC ${CMAKE_SOURCE_DIR})
-target_link_libraries(voop_net PUBLIC voop_core)
+target_link_libraries(voop_net PUBLIC voop_core fmt::fmt)
 
 
 enable_testing()

@@ -17,5 +17,7 @@ int main(int argc, char* argv[]) {
     V_LOG_INFO << "TEST";
     V_LOG_WARN << "TEST";
     V_LOG_ERROR << "TEST";
+
+    V_LOG_INFO << voop::net::DNS::query("google.com");
     return EXIT_SUCCESS;
 }
